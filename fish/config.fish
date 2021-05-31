@@ -34,6 +34,8 @@ set -g fish_pager_color_completion $foreground
 set -g fish_pager_color_description $comment
 
 set -Ua fish_user_paths $HOME/.cargo/bin $fish_user_paths
+
+set -Ua fish_user_paths  /opt/devkitpro/tools/bin $fish_user_paths
 set -Ua fish_user_paths /opt/devkitpro/devkitPPC/bin $fish_user_paths
 
 #Fish Completion    
