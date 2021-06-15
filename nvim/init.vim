@@ -1,9 +1,11 @@
 call plug#begin('~/.vim/plugged')
-
-Plug 'tpope/vim-fugitive' 
+ 
 
 let g:coc_global_extensions = ['coc-java', 'coc-go', 'coc-json', 'coc-xml', 'coc-yaml', 'coc-markdownlint', 'coc-rust-analyzer', 'coc-toml', 'coc-lua']
 Plug 'neoclide/coc.nvim', {'branch':'release'}
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax' 
 
 let $FZF_DEFAULT_COMMAND = 'rg --files'
 let $FZF_DEFAULT_OPTS= '--reverse'
@@ -23,7 +25,7 @@ let g:lightline = {
   \ }
   \}
 
-Plug 'sheerun/vim-polyglot'
+
 Plug 'ghifarit53/tokyonight-vim'
 
 call plug#end()
