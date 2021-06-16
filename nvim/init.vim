@@ -7,6 +7,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax' 
 
+Plug 'sirver/ultisnips'
+Plug 'honza/vim-snippets'
+
 let $FZF_DEFAULT_COMMAND = 'rg --files'
 let $FZF_DEFAULT_OPTS= '--reverse'
 let g:fzf_layout = {'window': {'width':1.0, 'height':0.9}}
