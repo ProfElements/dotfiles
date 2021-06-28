@@ -6,6 +6,7 @@ Plug 'neoclide/coc.nvim', {'branch':'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax' 
+Plug 'editorconfig/editorconfig-vim'
 
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
