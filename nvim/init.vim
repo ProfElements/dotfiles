@@ -1,12 +1,15 @@
 call plug#begin('~/.vim/plugged')
  
-
 let g:coc_global_extensions = ['coc-java', 'coc-go', 'coc-json', 'coc-xml', 'coc-yaml', 'coc-markdownlint', 'coc-rust-analyzer', 'coc-toml', 'coc-lua']
 Plug 'neoclide/coc.nvim', {'branch':'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax' 
 Plug 'editorconfig/editorconfig-vim'
+
+Plug 'rust-lang/rust.vim'
+Plug 'fatih/vim-go' {'do': ':GoUpdateBinaries' }
+Plug 'cespare/vim-toml'
 
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
