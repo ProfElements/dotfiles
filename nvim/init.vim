@@ -7,8 +7,9 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax' 
 Plug 'editorconfig/editorconfig-vim'
 
+let g:rustfmt_autosave = 1
 Plug 'rust-lang/rust.vim'
-Plug 'fatih/vim-go' {'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries' }
 Plug 'cespare/vim-toml'
 
 Plug 'sirver/ultisnips'
