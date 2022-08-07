@@ -1,0 +1,5 @@
+require("profelements.options")
+require("profelements.plugins")
+require("profelements.keybinds")
+require("profelements.lsp")
+require("profelements/line")
