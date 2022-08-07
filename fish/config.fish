@@ -47,5 +47,3 @@ kitty + complete setup fish | source
 
 #Starship Prompt // https://starship.rs
 starship init fish | source
-
-nvm use node
