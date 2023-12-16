@@ -39,3 +39,20 @@ require("lspconfig").rust_analyzer.setup{
     cmd = {"rustup", "run", "nightly", "rust-analyzer"},
     capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities()),
 }
+
+require("lspconfig").jdtls.setup{
+    on_attach = function() 
+        vim.keymap.set("n", "<leader>K", vim.lsp.buf.hover, {buffer=0})
+        vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {buffer=0})
+        vim.keymap.set("n", "<leader>gt", vim.lsp.buf.type_definition, {buffer=0})
+        vim.keymap.set("n", "<leader>gi", vim.lsp.buf.implementation, {buffer=0})
+        vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {buffer=0})
+        vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {buffer=0})
+        vim.keymap.set("n", "<leader>dp", vim.diagnostic.goto_prev, {buffer=0})
+        vim.keymap.set("n", "<leader>dn", vim.diagnostic.goto_next, {buffer=0})
+        
+        vim.keymap.set("n", "<leader>dl", "<cmd>Telescope diagnostics", {buffer=0})
+    end,
+    capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities()),
+
+}
