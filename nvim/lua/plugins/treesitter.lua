@@ -3,7 +3,7 @@ return {
   build = ':TSUpdate',
   config = function()
     require('nvim-treesitter.configs').setup {
-      ensured_installed = { 'bash', 'c', 'html', 'lua', 'markdown', 'vim', 'vimdoc' },
+      ensured_installed = { 'java', 'rust', 'bash', 'c', 'html', 'lua', 'markdown', 'vim', 'vimdoc' },
       auto_install = true,
       highlight = { enable = true },
       indent = { enable = true },

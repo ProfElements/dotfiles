@@ -53,6 +53,9 @@ return {
 
     local ensured_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensured_installed, {
+      'lua_language_server',
+      'rust-analyzer',
+      'jdtls',
       'stylua',
     })
 
